@@ -12,10 +12,12 @@ config SSD1306
 config SSD1306_REVERSE_MODE
 	default y
 
-config LV_HOR_RES_MAX
+if LVGL
+
+config LVGL_HOR_RES_MAX
 	default 128
 
-config LV_VER_RES_MAX
+config LVGL_VER_RES_MAX
 	default 64
 
 config LV_Z_VDB_SIZE
@@ -30,6 +32,8 @@ config LV_Z_BITS_PER_PIXEL
 choice LV_COLOR_DEPTH
 	default LV_COLOR_DEPTH_1
 endchoice
+
+endif # LVGL
 
 endif
 
