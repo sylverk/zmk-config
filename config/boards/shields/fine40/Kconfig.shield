@@ -3,3 +3,4 @@
 
 config SHIELD_fine40
 	def_bool $(shields_list_contains,fine40)
+
